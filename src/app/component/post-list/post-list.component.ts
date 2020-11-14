@@ -2,9 +2,9 @@ import {Component, OnInit} from '@angular/core';
 import {Post} from '../../model/post.model';
 import {PostsService} from '../../service/posts.service';
 @Component({
-  selector: 'app-posts-list',
-  templateUrl: './posts-list.component.html',
-  styleUrls: ['./posts-list.component.css']
+  selector: 'app-post-list',
+  templateUrl: './post-list.component.html',
+  styleUrls: ['./post-list.component.css']
 })
 
 export class PostsListComponent implements OnInit {

@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './component/home/home.component';
 import { AboutComponent } from './component/about/about.component';
 import { PostItemComponent } from './component/post-item/post-item.component';
-import { PostListComponent } from './component/post-list/post-list.component';
+
 import { PageNotFoundComponent } from './component/page-not-found/page-not-found.component';
 import {HttpClientModule} from '@angular/common/http';
+import {PostsListComponent} from './component/post-list/post-list.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,14 @@ import {HttpClientModule} from '@angular/common/http';
     HomeComponent,
     AboutComponent,
     PostItemComponent,
-    PostListComponent,
-    PageNotFoundComponent,
-    HttpClientModule
+    PostsListComponent,
+    PageNotFoundComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
