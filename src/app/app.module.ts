@@ -8,6 +8,7 @@ import { AboutComponent } from './component/about/about.component';
 import { PostItemComponent } from './component/post-item/post-item.component';
 import { PostListComponent } from './component/post-list/post-list.component';
 import { PageNotFoundComponent } from './component/page-not-found/page-not-found.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PageNotFoundComponent } from './component/page-not-found/page-not-found
     AboutComponent,
     PostItemComponent,
     PostListComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    HttpClientModule
   ],
   imports: [
     BrowserModule,
